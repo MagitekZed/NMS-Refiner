@@ -1,0 +1,15 @@
+[
+  { "id": "ferrite_dust", "name": "Ferrite Dust", "category": "element" },
+  { "id": "pure_ferrite", "name": "Pure Ferrite", "category": "element" },
+  { "id": "magnetised_ferrite", "name": "Magnetised Ferrite", "category": "element" },
+  { "id": "carbon", "name": "Carbon", "category": "element" },
+  { "id": "condensed_carbon", "name": "Condensed Carbon", "category": "element" },
+  { "id": "sodium", "name": "Sodium", "category": "element" },
+  { "id": "sodium_nitrate", "name": "Sodium Nitrate", "category": "element" },
+  { "id": "oxygen", "name": "Oxygen", "category": "gas" },
+  { "id": "kelp_sac", "name": "Kelp Sac", "category": "plant" },
+  { "id": "ammonia", "name": "Ammonia", "category": "element" },
+  { "id": "ionised_cobalt", "name": "Ionised Cobalt", "category": "element" },
+  { "id": "gold", "name": "Gold", "category": "element" },
+  { "id": "herox", "name": "Herox", "category": "alloy" }
+]
