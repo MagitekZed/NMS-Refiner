@@ -1,0 +1,10 @@
+[
+  { "id": "r_fd_to_pf", "inputs": [ { "itemId":"ferrite_dust", "qty":1 } ], "output": { "itemId":"pure_ferrite", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
+  { "id": "r_pf_to_mf", "inputs": [ { "itemId":"pure_ferrite", "qty":1 } ], "output": { "itemId":"magnetised_ferrite", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
+  { "id": "r_c_to_cc", "inputs": [ { "itemId":"carbon", "qty":2 } ], "output": { "itemId":"condensed_carbon", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
+  { "id": "r_cc_to_c", "inputs": [ { "itemId":"condensed_carbon", "qty":1 } ], "output": { "itemId":"carbon", "qty":2 }, "refinerSize":1, "timeSec": null, "notes": "" },
+  { "id": "r_na_to_nn", "inputs": [ { "itemId":"sodium", "qty":2 } ], "output": { "itemId":"sodium_nitrate", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
+  { "id": "r_nn_to_na", "inputs": [ { "itemId":"sodium_nitrate", "qty":1 } ], "output": { "itemId":"sodium", "qty":2 }, "refinerSize":1, "timeSec": null, "notes": "" },
+  { "id": "r_kelp_carbon_to_ox", "inputs": [ { "itemId":"kelp_sac", "qty":1 }, { "itemId":"carbon", "qty":1 } ], "output": { "itemId":"oxygen", "qty":2 }, "refinerSize":2, "timeSec": null, "notes": "Example 2-slot" },
+  { "id": "r_herox", "inputs": [ { "itemId":"ammonia", "qty":1 }, { "itemId":"ionised_cobalt", "qty":1 }, { "itemId":"gold", "qty":1 } ], "output": { "itemId":"herox", "qty":1 }, "refinerSize":3, "timeSec": null, "notes": "Alloy example" }
+]
