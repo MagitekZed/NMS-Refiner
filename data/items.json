@@ -2,12 +2,12 @@
   {
     "id": "nanite_cluster",
     "name": "Nanite Cluster",
-    "category": "unknown"
+    "category": "trade"
   },
   {
     "id": "salvaged_data",
     "name": "Salvaged Data",
-    "category": "unknown"
+    "category": "trade"
   },
   {
     "id": "gold",
@@ -17,22 +17,22 @@
   {
     "id": "living_pearl",
     "name": "Living Pearl",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "living_slime",
     "name": "Living Slime",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "hypnotic_eye",
     "name": "Hypnotic Eye",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "hadal_core",
     "name": "Hadal Core",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "sodium_nitrate",
@@ -42,12 +42,12 @@
   {
     "id": "crystal_sulphide",
     "name": "Crystal Sulphide",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "larval_core",
     "name": "Larval Core",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "condensed_carbon",
@@ -57,47 +57,47 @@
   {
     "id": "cyto_phosphate",
     "name": "Cyto-Phosphate",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "hexite",
     "name": "Hexite",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "glass",
     "name": "Glass",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "frost_crystal",
     "name": "Frost Crystal",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "pyrite",
     "name": "Pyrite",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "platinum",
     "name": "Platinum",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "pugneum",
     "name": "Pugneum",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "faecium",
     "name": "Faecium",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "mordite",
     "name": "Mordite",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "carbon",
@@ -112,12 +112,12 @@
   {
     "id": "di_hydrogen_jelly",
     "name": "Di-hydrogen Jelly",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "di_hydrogen",
     "name": "Di-hydrogen",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "ionised_cobalt",
@@ -127,7 +127,7 @@
   {
     "id": "cobalt",
     "name": "Cobalt",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "sodium",
@@ -152,52 +152,52 @@
   {
     "id": "chromatic_metal",
     "name": "Chromatic Metal",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "cadmium",
     "name": "Cadmium",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "indium",
     "name": "Indium",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "emeril",
     "name": "Emeril",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "copper",
     "name": "Copper",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "activated_cadmium",
     "name": "Activated Cadmium",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "activated_indium",
     "name": "Activated Indium",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "activated_emeril",
     "name": "Activated Emeril",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "activated_copper",
     "name": "Activated Copper",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "paraffinium",
     "name": "Paraffinium",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "ammonia",
@@ -207,97 +207,97 @@
   {
     "id": "uranium",
     "name": "Uranium",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "dioxite",
     "name": "Dioxite",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "phosphorus",
     "name": "Phosphorus",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "chlorine",
     "name": "Chlorine",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "salt",
     "name": "Salt",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "radon",
     "name": "Radon",
-    "category": "unknown"
+    "category": "gas"
   },
   {
     "id": "sulphurine",
     "name": "Sulphurine",
-    "category": "unknown"
+    "category": "gas"
   },
   {
     "id": "nitrogen",
     "name": "Nitrogen",
-    "category": "unknown"
+    "category": "gas"
   },
   {
     "id": "viscous_fluids",
     "name": "Viscous Fluids",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "residual_goop",
     "name": "Residual Goop",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "runaway_mould",
     "name": "Runaway Mould",
-    "category": "unknown"
+    "category": "curiosity"
   },
   {
     "id": "rusted_metal",
     "name": "Rusted Metal",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "tritium",
     "name": "Tritium",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "fungal_mould",
     "name": "Fungal Mould",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "gamma_root",
     "name": "Gamma Root",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "cactus_flesh",
     "name": "Cactus Flesh",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "solanium",
     "name": "Solanium",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "star_bulb",
     "name": "Star Bulb",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "marrow_bulb",
     "name": "Marrow Bulb",
-    "category": "unknown"
+    "category": "plant"
   },
   {
     "id": "kelp_sac",
@@ -307,17 +307,17 @@
   {
     "id": "silver",
     "name": "Silver",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "aronium",
     "name": "Aronium",
-    "category": "unknown"
+    "category": "alloy"
   },
   {
     "id": "dirty_bronze",
     "name": "Dirty Bronze",
-    "category": "unknown"
+    "category": "alloy"
   },
   {
     "id": "herox",
@@ -327,81 +327,81 @@
   {
     "id": "lemmium",
     "name": "Lemmium",
-    "category": "unknown"
+    "category": "alloy"
   },
   {
     "id": "magno_gold",
     "name": "Magno-Gold",
-    "category": "unknown"
+    "category": "alloy"
   },
   {
     "id": "grantine",
     "name": "Grantine",
-    "category": "unknown"
+    "category": "alloy"
   },
   {
     "id": "geodesite",
     "name": "Geodesite",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "iridesite",
     "name": "Iridesite",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "deuterium",
     "name": "Deuterium",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "warp_cell",
     "name": "Warp Cell",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "unstable_plasma",
     "name": "Unstable Plasma",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "life_support_gel",
     "name": "Life Support Gel",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "starship_launch_fuel",
     "name": "Starship Launch Fuel",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "ion_battery",
     "name": "Ion Battery",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "thermic_condensate",
     "name": "Thermic Condensate",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "enriched_carbon",
     "name": "Enriched Carbon",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "nitrogen_salt",
     "name": "Nitrogen Salt",
-    "category": "unknown"
+    "category": "product"
   },
   {
     "id": "silicate_powder",
     "name": "Silicate Powder",
-    "category": "unknown"
+    "category": "element"
   },
   {
     "id": "tainted_metal",
     "name": "Tainted Metal",
-    "category": "unknown"
+    "category": "trade"
   }
 ]
