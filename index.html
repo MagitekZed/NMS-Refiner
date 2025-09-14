@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NMS Refiner — Recipe Lookup (v0.2)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>NMS Refiner — Recipe Lookup</h1>
+    <div class="sub">v0.2 • Loads <code>data/items.json</code> + <code>data/recipes.json</code> (with fallback) • Text-only chips • Listbox UI</div>
+  </header>
+
+  <main class="grid">
+    <!-- Top row: selectors -->
+    <section class="selectors">
+      <div class="cell">
+        <div class="label-row">
+          <label class="label focusable" data-focus="item1">Item 1</label>
+          <button class="btn tiny clear" data-clear="item1" title="Clear">Clear</button>
+        </div>
+        <div id="lb-item1" class="listbox" role="listbox" aria-label="Item 1 options"></div>
+      </div>
+
+      <div class="cell">
+        <div class="label-row">
+          <label class="label focusable" data-focus="item2">Item 2 (if applicable)</label>
+          <button class="btn tiny clear" data-clear="item2" title="Clear">Clear</button>
+        </div>
+        <div id="lb-item2" class="listbox" role="listbox" aria-label="Item 2 options"></div>
+      </div>
+
+      <div class="cell">
+        <div class="label-row">
+          <label class="label focusable" data-focus="item3">Item 3 (if applicable)</label>
+          <button class="btn tiny clear" data-clear="item3" title="Clear">Clear</button>
+        </div>
+        <div id="lb-item3" class="listbox" role="listbox" aria-label="Item 3 options"></div>
+      </div>
+
+      <div class="cell final-cell">
+        <label class="label">Final Result</label>
+        <div id="results" class="results"></div>
+      </div>
+    </section>
+
+    <!-- Ladder: vertical progression -->
+    <section class="ladder">
+      <div class="ladder-head">
+        <div class="ladder-title"><span>Progression</span></div>
+        <div class="ladder-sub" id="ladderSub">Showing 1-slot steps from <strong>Item 1</strong></div>
+      </div>
+      <div id="ladder" class="ladder-steps"></div>
+    </section>
+
+    <!-- Reverse mode -->
+    <section class="reverse">
+      <header class="rev-head">
+        <h2>Reverse Lookup (Product → Inputs)</h2>
+      </header>
+      <div class="rev-controls list-only">
+        <div class="label-row">
+          <label class="label">Products</label>
+          <div style="display:flex;gap:8px;align-items:center">
+            <input id="productFilter" class="select" placeholder="Type to filter products" style="width:220px" />
+            <button class="btn tiny clear" data-clear="product" title="Clear">Clear</button>
+          </div>
+        </div>
+        <div id="lb-product" class="listbox" role="listbox" aria-label="Products"></div>
+      </div>
+      <div id="reverseResults" class="reverse-results"></div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div>© NMS Refiner • v0.2</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
