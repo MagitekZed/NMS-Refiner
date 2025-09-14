@@ -13,6 +13,8 @@
   --c-plant:#7bd4c6;
   --c-alloy:#f06292;
   --c-trade:#9fa8da;
+  --c-curiosity: #d49bff; /* Lilac/purple tone for curiosities */
+  --c-product: #f5a262;   /* Warm orange tone for products */
 
   --radius:16px;
 }
@@ -112,6 +114,8 @@ body{
 .chip.c-plant{border-color:var(--c-plant);color:var(--c-plant)}
 .chip.c-alloy{border-color:var(--c-alloy);color:var(--c-alloy)}
 .chip.c-trade{border-color:var(--c-trade);color:var(--c-trade)}
+.chip.c-curiosity {border-color: var(--c-curiosity);color: var(--c-curiosity);}
+.chip.c-product {border-color: var(--c-product);color: var(--c-product);}
 .plus{opacity:.6;margin:0 4px}
 
 /* Listboxes */
@@ -184,3 +188,4 @@ body{
   .cell{min-height:auto}
   .list-only{padding-top:0}
 }
+
