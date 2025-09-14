@@ -1,31 +1,5 @@
 // NMS Refiner v0.2 — external JSON (with local fallback), listbox selectors, progression
 
-const SEED_ITEMS = [
-  { "id": "ferrite_dust", "name": "Ferrite Dust", "category": "element" },
-  { "id": "pure_ferrite", "name": "Pure Ferrite", "category": "element" },
-  { "id": "magnetised_ferrite", "name": "Magnetised Ferrite", "category": "element" },
-  { "id": "carbon", "name": "Carbon", "category": "element" },
-  { "id": "condensed_carbon", "name": "Condensed Carbon", "category": "element" },
-  { "id": "sodium", "name": "Sodium", "category": "element" },
-  { "id": "sodium_nitrate", "name": "Sodium Nitrate", "category": "element" },
-  { "id": "oxygen", "name": "Oxygen", "category": "gas" },
-  { "id": "kelp_sac", "name": "Kelp Sac", "category": "plant" },
-  { "id": "ammonia", "name": "Ammonia", "category": "element" },
-  { "id": "ionised_cobalt", "name": "Ionised Cobalt", "category": "element" },
-  { "id": "gold", "name": "Gold", "category": "element" },
-  { "id": "herox", "name": "Herox", "category": "alloy" }
-];
-const SEED_RECIPES = [
-  { "id": "r_fd_to_pf", "inputs": [ { "itemId":"ferrite_dust", "qty":1 } ], "output": { "itemId":"pure_ferrite", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_pf_to_mf", "inputs": [ { "itemId":"pure_ferrite", "qty":1 } ], "output": { "itemId":"magnetised_ferrite", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_c_to_cc", "inputs": [ { "itemId":"carbon", "qty":2 } ], "output": { "itemId":"condensed_carbon", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_cc_to_c", "inputs": [ { "itemId":"condensed_carbon", "qty":1 } ], "output": { "itemId":"carbon", "qty":2 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_na_to_nn", "inputs": [ { "itemId":"sodium", "qty":2 } ], "output": { "itemId":"sodium_nitrate", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_nn_to_na", "inputs": [ { "itemId":"sodium_nitrate", "qty":1 } ], "output": { "itemId":"sodium", "qty":2 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_kelp_carbon_to_ox", "inputs": [ { "itemId":"kelp_sac", "qty":1 }, { "itemId":"carbon", "qty":1 } ], "output": { "itemId":"oxygen", "qty":2 }, "refinerSize":2, "timeSec": null, "notes": "Example 2-slot" },
-  { "id": "r_herox", "inputs": [ { "itemId":"ammonia", "qty":1 }, { "itemId":"ionised_cobalt", "qty":1 }, { "itemId":"gold", "qty":1 } ], "output": { "itemId":"herox", "qty":1 }, "refinerSize":3, "timeSec": null, "notes": "Alloy example" }
-];
-
 let ITEMS = [];
 let RECIPES = [];
 
@@ -467,4 +441,5 @@ async function main(){
   rerender();
 }
 document.addEventListener("DOMContentLoaded", main);
+
 
