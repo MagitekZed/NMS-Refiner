@@ -16,19 +16,21 @@ const state = {
   product: null, productFilter: "", focusedInput: "item1",
 };
 
-const USE_SEED_FALLBACK = false; // set to false for production
-
+// JSON-only load for GitHub Pages
 async function loadData(){
-  try{
-    const [it, rc] = await Promise.all([
-      fetch('data/items.json').then(r=>r.json()),
-      fetch('data/recipes.json').then(r=>r.json())
-    ]);
-    ITEMS = it; RECIPES = rc;
-  }catch(err){
-    if (!USE_SEED_FALLBACK) throw err;
-    ITEMS = SEED_ITEMS; RECIPES = SEED_RECIPES;
+  const v = 'v0.2'; // bump when you update the JSON
+  const itemsUrl   = `data/items.json?v=${v}`;
+  const recipesUrl = `data/recipes.json?v=${v}`;
+
+  const [itemsRes, recipesRes] = await Promise.all([
+    fetch(itemsUrl,   { cache: 'no-store' }),
+    fetch(recipesUrl, { cache: 'no-store' })
+  ]);
+  if (!itemsRes.ok || !recipesRes.ok) {
+    throw new Error('Failed to load data JSON from GitHub Pages.');
   }
+  ITEMS   = await itemsRes.json();
+  RECIPES = await recipesRes.json();
   buildIndexes();
 }
 
@@ -441,5 +443,6 @@ async function main(){
   rerender();
 }
 document.addEventListener("DOMContentLoaded", main);
+
 
 
