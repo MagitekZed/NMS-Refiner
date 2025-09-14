@@ -80,6 +80,8 @@ const categoryClass = (id) => {
   if (c === "plant") return "c-plant";
   if (c === "alloy") return "c-alloy";
   if (c === "trade") return "c-trade";
+  if (c === "product") return "c-product";    // new
+  if (c === "curiosity") return "c-curiosity"; // new
   return "";
 };
 const canonicalKey = (ids) => ids.filter(Boolean).slice().sort().join("|");
@@ -443,6 +445,7 @@ async function main(){
   rerender();
 }
 document.addEventListener("DOMContentLoaded", main);
+
 
 
 
