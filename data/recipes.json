@@ -1,10 +1,6082 @@
 [
-  { "id": "r_fd_to_pf", "inputs": [ { "itemId":"ferrite_dust", "qty":1 } ], "output": { "itemId":"pure_ferrite", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_pf_to_mf", "inputs": [ { "itemId":"pure_ferrite", "qty":1 } ], "output": { "itemId":"magnetised_ferrite", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_c_to_cc", "inputs": [ { "itemId":"carbon", "qty":2 } ], "output": { "itemId":"condensed_carbon", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_cc_to_c", "inputs": [ { "itemId":"condensed_carbon", "qty":1 } ], "output": { "itemId":"carbon", "qty":2 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_na_to_nn", "inputs": [ { "itemId":"sodium", "qty":2 } ], "output": { "itemId":"sodium_nitrate", "qty":1 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_nn_to_na", "inputs": [ { "itemId":"sodium_nitrate", "qty":1 } ], "output": { "itemId":"sodium", "qty":2 }, "refinerSize":1, "timeSec": null, "notes": "" },
-  { "id": "r_kelp_carbon_to_ox", "inputs": [ { "itemId":"kelp_sac", "qty":1 }, { "itemId":"carbon", "qty":1 } ], "output": { "itemId":"oxygen", "qty":2 }, "refinerSize":2, "timeSec": null, "notes": "Example 2-slot" },
-  { "id": "r_herox", "inputs": [ { "itemId":"ammonia", "qty":1 }, { "itemId":"ionised_cobalt", "qty":1 }, { "itemId":"gold", "qty":1 } ], "output": { "itemId":"herox", "qty":1 }, "refinerSize":3, "timeSec": null, "notes": "Alloy example" }
+  {
+    "id": "r_salvaged_data_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "salvaged_data",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 15
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_living_pearl_to_gold",
+    "inputs": [
+      {
+        "itemId": "living_pearl",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 100
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_hypnotic_eye_to_living_slime",
+    "inputs": [
+      {
+        "itemId": "hypnotic_eye",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "living_slime",
+      "qty": 50
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_hadal_core_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "hadal_core",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 50
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_crystal_sulphide_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "crystal_sulphide",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 50
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_larval_core_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "larval_core",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 50
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cyto_phosphate_to_condensed_carbon",
+    "inputs": [
+      {
+        "itemId": "cyto_phosphate",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "condensed_carbon",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_hexite_to_gold",
+    "inputs": [
+      {
+        "itemId": "hexite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_frost_crystal_to_glass",
+    "inputs": [
+      {
+        "itemId": "frost_crystal",
+        "qty": 40
+      }
+    ],
+    "output": {
+      "itemId": "glass",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_to_pyrite",
+    "inputs": [
+      {
+        "itemId": "gold",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "pyrite",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_platinum_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "platinum",
+        "qty": 35
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pugneum_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "pugneum",
+        "qty": 25
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_mordite_to_faecium",
+    "inputs": [
+      {
+        "itemId": "mordite",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "itemId": "faecium",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_to_carbon",
+    "inputs": [
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "carbon",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_to_di_hydrogen_jelly",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen",
+        "qty": 30
+      }
+    ],
+    "output": {
+      "itemId": "di_hydrogen_jelly",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_jelly_to_di_hydrogen",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen_jelly",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "di_hydrogen",
+      "qty": 40
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_to_ionised_cobalt",
+    "inputs": [
+      {
+        "itemId": "cobalt",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "ionised_cobalt",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_to_cobalt",
+    "inputs": [
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "cobalt",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_to_carbon",
+    "inputs": [
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "carbon",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_to_condensed_carbon",
+    "inputs": [
+      {
+        "itemId": "carbon",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "condensed_carbon",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "sodium",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_sodium_nitrate_to_sodium",
+    "inputs": [
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_to_pure_ferrite",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "pure_ferrite",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "pure_ferrite",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_magnetised_ferrite_to_pure_ferrite",
+    "inputs": [
+      {
+        "itemId": "magnetised_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "pure_ferrite",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cadmium_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "cadmium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_indium_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "indium",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 4
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_emeril_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "emeril",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 3
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_copper_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "copper",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_cadmium_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "activated_cadmium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_indium_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "activated_indium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 4
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_emeril_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "activated_emeril",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 3
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_copper_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "activated_copper",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_paraffinium_to_ferrite_dust",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ferrite_dust",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pyrite_to_ferrite_dust",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ferrite_dust",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_to_ferrite_dust",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ferrite_dust",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_uranium_to_ferrite_dust",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ferrite_dust",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_to_ferrite_dust",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ferrite_dust",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_phosphorus_to_ferrite_dust",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ferrite_dust",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_salt_to_chlorine",
+    "inputs": [
+      {
+        "itemId": "salt",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "chlorine",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chlorine_to_salt",
+    "inputs": [
+      {
+        "itemId": "chlorine",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "salt",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_sulphurine_to_radon",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "itemId": "radon",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_radon_to_nitrogen",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "itemId": "nitrogen",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_nitrogen_to_sulphurine",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "itemId": "sulphurine",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_residual_goop_to_viscous_fluids",
+    "inputs": [
+      {
+        "itemId": "residual_goop",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "viscous_fluids",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_runaway_mould_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "runaway_mould",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_rusted_metal_to_ferrite_dust",
+    "inputs": [
+      {
+        "itemId": "rusted_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ferrite_dust",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_living_slime_to_runaway_mould",
+    "inputs": [
+      {
+        "itemId": "living_slime",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "runaway_mould",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_viscous_fluids_to_living_slime",
+    "inputs": [
+      {
+        "itemId": "viscous_fluids",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "living_slime",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_tritium_to_di_hydrogen",
+    "inputs": [
+      {
+        "itemId": "tritium",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "di_hydrogen",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_fungal_mould_to_carbon",
+    "inputs": [
+      {
+        "itemId": "fungal_mould",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "carbon",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gamma_root_to_carbon",
+    "inputs": [
+      {
+        "itemId": "gamma_root",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "carbon",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cactus_flesh_to_carbon",
+    "inputs": [
+      {
+        "itemId": "cactus_flesh",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "carbon",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_solanium_to_carbon",
+    "inputs": [
+      {
+        "itemId": "solanium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "carbon",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_star_bulb_to_carbon",
+    "inputs": [
+      {
+        "itemId": "star_bulb",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "carbon",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_marrow_bulb_to_sodium",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_kelp_sac_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_faecium_to_mordite",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 3
+      }
+    ],
+    "output": {
+      "itemId": "mordite",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_aronium_to_silver",
+    "inputs": [
+      {
+        "itemId": "aronium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "silver",
+      "qty": 250
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dirty_bronze_to_silver",
+    "inputs": [
+      {
+        "itemId": "dirty_bronze",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "silver",
+      "qty": 250
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_herox_to_silver",
+    "inputs": [
+      {
+        "itemId": "herox",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "silver",
+      "qty": 250
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_lemmium_to_gold",
+    "inputs": [
+      {
+        "itemId": "lemmium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 125
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_magno_gold_to_gold",
+    "inputs": [
+      {
+        "itemId": "magno_gold",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 125
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_grantine_to_gold",
+    "inputs": [
+      {
+        "itemId": "grantine",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 125
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_geodesite_to_platinum",
+    "inputs": [
+      {
+        "itemId": "geodesite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "platinum",
+      "qty": 250
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_iridesite_to_platinum",
+    "inputs": [
+      {
+        "itemId": "iridesite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "platinum",
+      "qty": 250
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cyto_phosphate_salt_to_glass",
+    "inputs": [
+      {
+        "itemId": "cyto_phosphate",
+        "qty": 50
+      },
+      {
+        "itemId": "salt",
+        "qty": 50
+      }
+    ],
+    "output": {
+      "itemId": "glass",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_faecium_hexite_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "hexite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_faecium_residual_goop_to_gold",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "residual_goop",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_silver_to_platinum",
+    "inputs": [
+      {
+        "itemId": "gold",
+        "qty": 1
+      },
+      {
+        "itemId": "silver",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "platinum",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_uranium_to_condensed_carbon",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 1
+      },
+      {
+        "itemId": "di_hydrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "condensed_carbon",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_sulphurine_to_solanium",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      },
+      {
+        "itemId": "di_hydrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "solanium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_radon_to_uranium",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 1
+      },
+      {
+        "itemId": "di_hydrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "uranium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_nitrogen_to_ammonia",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "di_hydrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ammonia",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_oxygen_to_salt",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "salt",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_di_hydrogen_to_faecium",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "faecium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_di_hydrogen_to_mordite",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "mordite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_pure_ferrite_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      },
+      {
+        "itemId": "carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_pure_ferrite_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_tritium_to_deuterium",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "tritium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "deuterium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_pure_ferrite_to_rusted_metal",
+    "inputs": [
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "rusted_metal",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_oxygen_to_rusted_metal",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "rusted_metal",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_oxygen_to_condensed_carbon",
+    "inputs": [
+      {
+        "itemId": "carbon",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "condensed_carbon",
+      "qty": 5
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_oxygen_to_condensed_carbon",
+    "inputs": [
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "condensed_carbon",
+      "qty": 6
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "sodium",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_sodium_nitrate_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "carbon",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_sodium_nitrate_to_dioxite",
+    "inputs": [
+      {
+        "itemId": "carbon",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "dioxite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_sodium_nitrate_to_dioxite",
+    "inputs": [
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "dioxite",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_pugneum_to_mordite",
+    "inputs": [
+      {
+        "itemId": "carbon",
+        "qty": 1
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "mordite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_pugneum_to_mordite",
+    "inputs": [
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "mordite",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pugneum_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "sodium",
+        "qty": 1
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pugneum_sodium_nitrate_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_mordite_to_faecium",
+    "inputs": [
+      {
+        "itemId": "carbon",
+        "qty": 2
+      },
+      {
+        "itemId": "mordite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "faecium",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_mordite_to_faecium",
+    "inputs": [
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      },
+      {
+        "itemId": "mordite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "faecium",
+      "qty": 4
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_mordite_sodium_to_marrow_bulb",
+    "inputs": [
+      {
+        "itemId": "sodium",
+        "qty": 2
+      },
+      {
+        "itemId": "mordite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "marrow_bulb",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_mordite_sodium_nitrate_to_marrow_bulb",
+    "inputs": [
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      },
+      {
+        "itemId": "mordite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "marrow_bulb",
+      "qty": 4
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_pugneum_to_pure_ferrite",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 2
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "pure_ferrite",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pugneum_pure_ferrite_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "pure_ferrite",
+        "qty": 2
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_magnetised_ferrite_pugneum_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "magnetised_ferrite",
+        "qty": 3
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 4
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cadmium_chromatic_metal_to_cadmium",
+    "inputs": [
+      {
+        "itemId": "cadmium",
+        "qty": 1
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "cadmium",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_indium_to_indium",
+    "inputs": [
+      {
+        "itemId": "indium",
+        "qty": 1
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "indium",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_emeril_to_emeril",
+    "inputs": [
+      {
+        "itemId": "emeril",
+        "qty": 1
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "emeril",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_copper_to_copper",
+    "inputs": [
+      {
+        "itemId": "copper",
+        "qty": 1
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "copper",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_paraffinium_star_bulb_to_star_bulb",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 1
+      },
+      {
+        "itemId": "star_bulb",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "star_bulb",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cactus_flesh_pyrite_to_cactus_flesh",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 1
+      },
+      {
+        "itemId": "cactus_flesh",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "cactus_flesh",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_fungal_mould_to_fungal_mould",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 1
+      },
+      {
+        "itemId": "fungal_mould",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "fungal_mould",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gamma_root_uranium_to_gamma_root",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 1
+      },
+      {
+        "itemId": "gamma_root",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gamma_root",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_frost_crystal_to_frost_crystal",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 1
+      },
+      {
+        "itemId": "frost_crystal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "frost_crystal",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_phosphorus_solanium_to_solanium",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 1
+      },
+      {
+        "itemId": "solanium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "solanium",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_salt_to_chlorine",
+    "inputs": [
+      {
+        "itemId": "salt",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "chlorine",
+      "qty": 5
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chlorine_oxygen_to_chlorine",
+    "inputs": [
+      {
+        "itemId": "chlorine",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "chlorine",
+      "qty": 6
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_oxygen_to_ionised_cobalt",
+    "inputs": [
+      {
+        "itemId": "cobalt",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "ionised_cobalt",
+      "qty": 5
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_oxygen_to_ionised_cobalt",
+    "inputs": [
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "ionised_cobalt",
+      "qty": 6
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_mordite_pugneum_to_gold",
+    "inputs": [
+      {
+        "itemId": "mordite",
+        "qty": 1
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_silver_to_paraffinium",
+    "inputs": [
+      {
+        "itemId": "silver",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "paraffinium",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_oxygen_to_pyrite",
+    "inputs": [
+      {
+        "itemId": "gold",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "pyrite",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_platinum_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "platinum",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 10
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_sulphurine_to_radon",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "radon",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_radon_to_nitrogen",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "nitrogen",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_nitrogen_oxygen_to_sulphurine",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sulphurine",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_sulphurine_to_radon",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "radon",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_radon_to_nitrogen",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 1
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "nitrogen",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_nitrogen_to_sulphurine",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sulphurine",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_nitrogen_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_nitrogen_sodium_nitrate_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_marrow_bulb_oxygen_to_ionised_cobalt",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ionised_cobalt",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_kelp_sac_oxygen_to_chlorine",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chlorine",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_faecium_oxygen_to_faecium",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "faecium",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_marrow_bulb_pugneum_to_ionised_cobalt",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ionised_cobalt",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_kelp_sac_pugneum_to_chlorine",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chlorine",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_marrow_bulb_to_sodium",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_kelp_sac_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_faecium_to_condensed_carbon",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "carbon",
+        "qty": 2
+      }
+    ],
+    "output": {
+      "itemId": "condensed_carbon",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_marrow_bulb_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_kelp_sac_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_faecium_sodium_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_marrow_bulb_to_sodium",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_kelp_sac_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_faecium_to_condensed_carbon",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "condensed_carbon",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_marrow_bulb_sodium_nitrate_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_kelp_sac_sodium_nitrate_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_faecium_sodium_nitrate_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_marrow_bulb_to_ionised_cobalt",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ionised_cobalt",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_kelp_sac_salt_to_chlorine",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "salt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chlorine",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_marrow_bulb_to_ionised_cobalt",
+    "inputs": [
+      {
+        "itemId": "marrow_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ionised_cobalt",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chlorine_kelp_sac_to_chlorine",
+    "inputs": [
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "chlorine",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chlorine",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_faecium_pugneum_to_gold",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "pugneum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_faecium_mordite_to_condensed_carbon",
+    "inputs": [
+      {
+        "itemId": "faecium",
+        "qty": 1
+      },
+      {
+        "itemId": "mordite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "condensed_carbon",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_indium_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "indium",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 4
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cadmium_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "cadmium",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_emeril_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "emeril",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_copper_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "copper",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cadmium_pure_ferrite_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "cadmium",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_emeril_pure_ferrite_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "emeril",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_copper_pure_ferrite_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "copper",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_indium_pure_ferrite_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "indium",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 4
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_cadmium_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "activated_cadmium",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 4
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_indium_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "activated_indium",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 8
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_emeril_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "activated_emeril",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 6
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_copper_ferrite_dust_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "activated_copper",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_cadmium_pure_ferrite_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "activated_cadmium",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 4
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_indium_pure_ferrite_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "activated_indium",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 8
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_emeril_pure_ferrite_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "activated_emeril",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 6
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_activated_copper_pure_ferrite_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "activated_copper",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_paraffinium_to_star_bulb",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "star_bulb",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_pyrite_to_cactus_flesh",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "cactus_flesh",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_oxygen_to_fungal_mould",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "fungal_mould",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_uranium_to_gamma_root",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gamma_root",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_oxygen_to_frost_crystal",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "frost_crystal",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_oxygen_phosphorus_to_solanium",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 2
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "solanium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_paraffinium_to_ammonia",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 2
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ammonia",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_pyrite_to_paraffinium",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 2
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "paraffinium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_ferrite_dust_to_dioxite",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 2
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "dioxite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_uranium_to_pyrite",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 2
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "pyrite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_ferrite_dust_to_phosphorus",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 2
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "phosphorus",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_phosphorus_to_uranium",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 2
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "uranium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_paraffinium_pure_ferrite_to_ammonia",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 2
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ammonia",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_pyrite_to_paraffinium",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 2
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "paraffinium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_pure_ferrite_to_dioxite",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 2
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "dioxite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_uranium_to_pyrite",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 2
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "pyrite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_pure_ferrite_to_phosphorus",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 2
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "phosphorus",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_phosphorus_pure_ferrite_to_uranium",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 2
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "uranium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_fungal_mould_salt_to_ammonia",
+    "inputs": [
+      {
+        "itemId": "fungal_mould",
+        "qty": 2
+      },
+      {
+        "itemId": "salt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "ammonia",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_frost_crystal_salt_to_dioxite",
+    "inputs": [
+      {
+        "itemId": "frost_crystal",
+        "qty": 2
+      },
+      {
+        "itemId": "salt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "dioxite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gamma_root_salt_to_uranium",
+    "inputs": [
+      {
+        "itemId": "gamma_root",
+        "qty": 2
+      },
+      {
+        "itemId": "salt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "uranium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cactus_flesh_salt_to_pyrite",
+    "inputs": [
+      {
+        "itemId": "cactus_flesh",
+        "qty": 2
+      },
+      {
+        "itemId": "salt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "pyrite",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_salt_solanium_to_phosphorus",
+    "inputs": [
+      {
+        "itemId": "solanium",
+        "qty": 2
+      },
+      {
+        "itemId": "salt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "phosphorus",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_salt_star_bulb_to_paraffinium",
+    "inputs": [
+      {
+        "itemId": "star_bulb",
+        "qty": 2
+      },
+      {
+        "itemId": "salt",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "paraffinium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_sulphurine_to_paraffinium",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "paraffinium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_radon_to_uranium",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "radon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "uranium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_nitrogen_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_sulphurine_to_paraffinium",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "paraffinium",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_radon_to_uranium",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "uranium",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_nitrogen_pure_ferrite_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 2
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_magnetised_ferrite_sulphurine_to_paraffinium",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      },
+      {
+        "itemId": "magnetised_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "paraffinium",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_magnetised_ferrite_radon_to_uranium",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 1
+      },
+      {
+        "itemId": "magnetised_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "uranium",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_magnetised_ferrite_nitrogen_to_sodium_nitrate",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      },
+      {
+        "itemId": "magnetised_ferrite",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "sodium_nitrate",
+      "qty": 3
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_nitrogen_to_fungal_mould",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 1
+      },
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "fungal_mould",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_radon_to_frost_crystal",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 1
+      },
+      {
+        "itemId": "radon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "frost_crystal",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_radon_uranium_to_gamma_root",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 1
+      },
+      {
+        "itemId": "radon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gamma_root",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pyrite_sulphurine_to_cactus_flesh",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 1
+      },
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "cactus_flesh",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_phosphorus_sulphurine_to_solanium",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 1
+      },
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "solanium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_nitrogen_paraffinium_to_star_bulb",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 1
+      },
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "star_bulb",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_nitrogen_to_marrow_bulb",
+    "inputs": [
+      {
+        "itemId": "cobalt",
+        "qty": 1
+      },
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "marrow_bulb",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_nitrogen_salt_to_kelp_sac",
+    "inputs": [
+      {
+        "itemId": "salt",
+        "qty": 1
+      },
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "kelp_sac",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_nitrogen_sulphurine_to_faecium",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 1
+      },
+      {
+        "itemId": "nitrogen",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "faecium",
+      "qty": 1
+    },
+    "refinerSize": 2,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_platinum_silver_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "silver",
+        "qty": 15
+      },
+      {
+        "itemId": "gold",
+        "qty": 15
+      },
+      {
+        "itemId": "platinum",
+        "qty": 25
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_pure_ferrite_silver_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      },
+      {
+        "itemId": "silver",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 5
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_gold_pure_ferrite_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      },
+      {
+        "itemId": "gold",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 8
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_platinum_pure_ferrite_to_magnetised_ferrite",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 1
+      },
+      {
+        "itemId": "platinum",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "magnetised_ferrite",
+      "qty": 12
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_fungal_mould_kelp_sac_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "fungal_mould",
+        "qty": 1
+      },
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_frost_crystal_kelp_sac_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "frost_crystal",
+        "qty": 1
+      },
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cactus_flesh_condensed_carbon_kelp_sac_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "cactus_flesh",
+        "qty": 1
+      },
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_kelp_sac_solanium_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "solanium",
+        "qty": 1
+      },
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_gamma_root_kelp_sac_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "gamma_root",
+        "qty": 1
+      },
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_kelp_sac_star_bulb_to_oxygen",
+    "inputs": [
+      {
+        "itemId": "star_bulb",
+        "qty": 1
+      },
+      {
+        "itemId": "kelp_sac",
+        "qty": 1
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "oxygen",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_copper_gold_silver_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "silver",
+        "qty": 1
+      },
+      {
+        "itemId": "gold",
+        "qty": 1
+      },
+      {
+        "itemId": "copper",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 5
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cadmium_gold_silver_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "silver",
+        "qty": 1
+      },
+      {
+        "itemId": "gold",
+        "qty": 1
+      },
+      {
+        "itemId": "cadmium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_emeril_gold_silver_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "silver",
+        "qty": 1
+      },
+      {
+        "itemId": "gold",
+        "qty": 1
+      },
+      {
+        "itemId": "emeril",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 20
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_indium_silver_to_chromatic_metal",
+    "inputs": [
+      {
+        "itemId": "silver",
+        "qty": 1
+      },
+      {
+        "itemId": "gold",
+        "qty": 1
+      },
+      {
+        "itemId": "indium",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "chromatic_metal",
+      "qty": 30
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_emeril_ferrite_dust_oxygen_to_gold",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      },
+      {
+        "itemId": "emeril",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "gold",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_ferrite_dust_oxygen_to_platinum",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 1
+      },
+      {
+        "itemId": "oxygen",
+        "qty": 1
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 250
+      }
+    ],
+    "output": {
+      "itemId": "platinum",
+      "qty": 10
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_condensed_carbon_sodium_to_warp_cell",
+    "inputs": [
+      {
+        "itemId": "condensed_carbon",
+        "qty": 25
+      },
+      {
+        "itemId": "sodium",
+        "qty": 10
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 250
+      }
+    ],
+    "output": {
+      "itemId": "warp_cell",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_chromatic_metal_sodium_nitrate_to_warp_cell",
+    "inputs": [
+      {
+        "itemId": "carbon",
+        "qty": 50
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 5
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 250
+      }
+    ],
+    "output": {
+      "itemId": "warp_cell",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chromatic_metal_condensed_carbon_sodium_nitrate_to_warp_cell",
+    "inputs": [
+      {
+        "itemId": "condensed_carbon",
+        "qty": 25
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 5
+      },
+      {
+        "itemId": "chromatic_metal",
+        "qty": 250
+      }
+    ],
+    "output": {
+      "itemId": "warp_cell",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_ferrite_dust_oxygen_to_unstable_plasma",
+    "inputs": [
+      {
+        "itemId": "oxygen",
+        "qty": 10
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 20
+      },
+      {
+        "itemId": "carbon",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "unstable_plasma",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_ferrite_dust_oxygen_to_unstable_plasma",
+    "inputs": [
+      {
+        "itemId": "oxygen",
+        "qty": 10
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 20
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "unstable_plasma",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_oxygen_pure_ferrite_to_unstable_plasma",
+    "inputs": [
+      {
+        "itemId": "oxygen",
+        "qty": 10
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 20
+      },
+      {
+        "itemId": "carbon",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "unstable_plasma",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_oxygen_pure_ferrite_to_unstable_plasma",
+    "inputs": [
+      {
+        "itemId": "oxygen",
+        "qty": 10
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "unstable_plasma",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_di_hydrogen_oxygen_to_life_support_gel",
+    "inputs": [
+      {
+        "itemId": "oxygen",
+        "qty": 10
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      },
+      {
+        "itemId": "di_hydrogen",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "life_support_gel",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_ferrite_dust_sodium_nitrate_to_starship_launch_fuel",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen",
+        "qty": 10
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 20
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "starship_launch_fuel",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_pure_ferrite_sodium_to_starship_launch_fuel",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen",
+        "qty": 10
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 20
+      },
+      {
+        "itemId": "sodium",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "starship_launch_fuel",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_di_hydrogen_magnetised_ferrite_sodium_nitrate_to_starship_launch_fuel",
+    "inputs": [
+      {
+        "itemId": "di_hydrogen",
+        "qty": 10
+      },
+      {
+        "itemId": "magnetised_ferrite",
+        "qty": 10
+      },
+      {
+        "itemId": "sodium_nitrate",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "starship_launch_fuel",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_silver_sodium_to_ion_battery",
+    "inputs": [
+      {
+        "itemId": "ferrite_dust",
+        "qty": 10
+      },
+      {
+        "itemId": "silver",
+        "qty": 10
+      },
+      {
+        "itemId": "sodium",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "ion_battery",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_paraffinium_tritium_to_aronium",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "aronium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_paraffinium_tritium_to_aronium",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "aronium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_paraffinium_silver_to_aronium",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "aronium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_paraffinium_silver_to_aronium",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "aronium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_gold_paraffinium_to_aronium",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "aronium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_ionised_cobalt_paraffinium_to_aronium",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "aronium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_paraffinium_platinum_to_aronium",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "aronium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_paraffinium_platinum_to_aronium",
+    "inputs": [
+      {
+        "itemId": "paraffinium",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "aronium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_pyrite_tritium_to_dirty_bronze",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 30
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 120
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "dirty_bronze",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_pyrite_tritium_to_dirty_bronze",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 30
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 60
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "dirty_bronze",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_pyrite_silver_to_dirty_bronze",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 30
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 120
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "dirty_bronze",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_pyrite_silver_to_dirty_bronze",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 30
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 60
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "dirty_bronze",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_gold_pyrite_to_dirty_bronze",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 30
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 120
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "dirty_bronze",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_pure_ferrite_pyrite_to_dirty_bronze",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 30
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 60
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "dirty_bronze",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_platinum_pyrite_to_dirty_bronze",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 30
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 120
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "dirty_bronze",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_platinum_pure_ferrite_pyrite_to_dirty_bronze",
+    "inputs": [
+      {
+        "itemId": "pyrite",
+        "qty": 30
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 60
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "dirty_bronze",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_cobalt_tritium_to_herox",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "herox",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_ionised_cobalt_tritium_to_herox",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "herox",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_cobalt_silver_to_herox",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "herox",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_ionised_cobalt_silver_to_herox",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "herox",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_cobalt_gold_to_herox",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "herox",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_gold_ionised_cobalt_to_herox",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "herox",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_cobalt_platinum_to_herox",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "herox",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ammonia_ionised_cobalt_platinum_to_herox",
+    "inputs": [
+      {
+        "itemId": "ammonia",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "herox",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_tritium_uranium_to_lemmium",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 30
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 120
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "lemmium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_tritium_uranium_to_lemmium",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 30
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 60
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "lemmium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_silver_uranium_to_lemmium",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 30
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 120
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "lemmium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_pure_ferrite_silver_uranium_to_lemmium",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 30
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 60
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "lemmium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_gold_uranium_to_lemmium",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 30
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 120
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "lemmium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_pure_ferrite_uranium_to_lemmium",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 30
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 60
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "lemmium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ferrite_dust_platinum_uranium_to_lemmium",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 30
+      },
+      {
+        "itemId": "ferrite_dust",
+        "qty": 120
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "lemmium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_platinum_pure_ferrite_uranium_to_lemmium",
+    "inputs": [
+      {
+        "itemId": "uranium",
+        "qty": 30
+      },
+      {
+        "itemId": "pure_ferrite",
+        "qty": 60
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "lemmium",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_phosphorus_tritium_to_magno_gold",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "magno_gold",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_phosphorus_tritium_to_magno_gold",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "magno_gold",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_phosphorus_silver_to_magno_gold",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "magno_gold",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_phosphorus_silver_to_magno_gold",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "magno_gold",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_gold_phosphorus_to_magno_gold",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "magno_gold",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_gold_ionised_cobalt_phosphorus_to_magno_gold",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "magno_gold",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_phosphorus_platinum_to_magno_gold",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "magno_gold",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_ionised_cobalt_phosphorus_platinum_to_magno_gold",
+    "inputs": [
+      {
+        "itemId": "phosphorus",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "magno_gold",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_dioxite_tritium_to_grantine",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "grantine",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_ionised_cobalt_tritium_to_grantine",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "tritium",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "grantine",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_dioxite_silver_to_grantine",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "grantine",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_ionised_cobalt_silver_to_grantine",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "silver",
+        "qty": 20
+      }
+    ],
+    "output": {
+      "itemId": "grantine",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_dioxite_gold_to_grantine",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "grantine",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_gold_ionised_cobalt_to_grantine",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "gold",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "grantine",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_cobalt_dioxite_platinum_to_grantine",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 30
+      },
+      {
+        "itemId": "cobalt",
+        "qty": 60
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "grantine",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_dioxite_ionised_cobalt_platinum_to_grantine",
+    "inputs": [
+      {
+        "itemId": "dioxite",
+        "qty": 30
+      },
+      {
+        "itemId": "ionised_cobalt",
+        "qty": 30
+      },
+      {
+        "itemId": "platinum",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "grantine",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_salt_sulphurine_to_thermic_condensate",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 100
+      },
+      {
+        "itemId": "carbon",
+        "qty": 20
+      },
+      {
+        "itemId": "salt",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "thermic_condensate",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_radon_salt_to_enriched_carbon",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 100
+      },
+      {
+        "itemId": "carbon",
+        "qty": 20
+      },
+      {
+        "itemId": "salt",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "enriched_carbon",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_nitrogen_salt_to_nitrogen_salt",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 100
+      },
+      {
+        "itemId": "carbon",
+        "qty": 20
+      },
+      {
+        "itemId": "salt",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "nitrogen_salt",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_salt_sulphurine_to_thermic_condensate",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 100
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      },
+      {
+        "itemId": "salt",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "thermic_condensate",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_radon_salt_to_enriched_carbon",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 100
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      },
+      {
+        "itemId": "salt",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "enriched_carbon",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_condensed_carbon_nitrogen_salt_to_nitrogen_salt",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 100
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      },
+      {
+        "itemId": "salt",
+        "qty": 10
+      }
+    ],
+    "output": {
+      "itemId": "nitrogen_salt",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_chlorine_sulphurine_to_thermic_condensate",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 100
+      },
+      {
+        "itemId": "carbon",
+        "qty": 20
+      },
+      {
+        "itemId": "chlorine",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "thermic_condensate",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_chlorine_radon_to_enriched_carbon",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 100
+      },
+      {
+        "itemId": "carbon",
+        "qty": 20
+      },
+      {
+        "itemId": "chlorine",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "enriched_carbon",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_carbon_chlorine_nitrogen_to_nitrogen_salt",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 100
+      },
+      {
+        "itemId": "carbon",
+        "qty": 20
+      },
+      {
+        "itemId": "chlorine",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "nitrogen_salt",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chlorine_condensed_carbon_sulphurine_to_thermic_condensate",
+    "inputs": [
+      {
+        "itemId": "sulphurine",
+        "qty": 100
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      },
+      {
+        "itemId": "chlorine",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "thermic_condensate",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chlorine_condensed_carbon_radon_to_enriched_carbon",
+    "inputs": [
+      {
+        "itemId": "radon",
+        "qty": 100
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      },
+      {
+        "itemId": "chlorine",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "enriched_carbon",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_chlorine_condensed_carbon_nitrogen_to_nitrogen_salt",
+    "inputs": [
+      {
+        "itemId": "nitrogen",
+        "qty": 100
+      },
+      {
+        "itemId": "condensed_carbon",
+        "qty": 10
+      },
+      {
+        "itemId": "chlorine",
+        "qty": 5
+      }
+    ],
+    "output": {
+      "itemId": "nitrogen_salt",
+      "qty": 1
+    },
+    "refinerSize": 3,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_silicate_powder_to_glass",
+    "inputs": [
+      {
+        "itemId": "silicate_powder",
+        "qty": 40
+      }
+    ],
+    "output": {
+      "itemId": "glass",
+      "qty": 1
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  },
+  {
+    "id": "r_tainted_metal_to_nanite_cluster",
+    "inputs": [
+      {
+        "itemId": "tainted_metal",
+        "qty": 1
+      }
+    ],
+    "output": {
+      "itemId": "nanite_cluster",
+      "qty": 2
+    },
+    "refinerSize": 1,
+    "timeSec": null,
+    "notes": ""
+  }
 ]
