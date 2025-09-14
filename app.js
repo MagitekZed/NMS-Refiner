@@ -42,7 +42,7 @@ const state = {
   product: null, productFilter: "", focusedInput: "item1",
 };
 
-const USE_SEED_FALLBACK = true; // set to false for production
+const USE_SEED_FALLBACK = false; // set to false for production
 
 async function loadData(){
   try{
@@ -467,3 +467,4 @@ async function main(){
   rerender();
 }
 document.addEventListener("DOMContentLoaded", main);
+
